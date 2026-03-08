@@ -2,7 +2,7 @@
 
 // Module Name : RPanY
 // F(A,B,C,D) = πM(0,1,5,8,9,13)
-// Simplificqtion using K-Maps: 
+// Simplification using K-Maps: 
 // 1. (B+C+D)(C+D')
 // 2. C+((B+D)(D'))
 // 3. C + BD'

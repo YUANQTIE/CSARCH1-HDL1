@@ -7,7 +7,7 @@ module RPanY_tb();
     wire t_F;
     integer i;
 
-    RPanY dut(t_input[3], t_input[2], t_input[1], t_input[0],t_F);
+    RPanY dut(t_input[3], t_input[2], t_input[1], t_input[0], t_F);
 
     initial 
     begin
@@ -20,11 +20,11 @@ module RPanY_tb();
 
     initial
     begin
-        $display("Yuan Miguel A. Panlilio");
-        $display("F(A,B,C,D) = πM(0,1,5,8,9,13)");
-        $display("Behavioral");
+        $display("Name: Yuan Miguel A. Panlilio");
+        $display("Boolean Function: F(A,B,C,D) = πM(0,1,5,8,9,13)");
+        $display("Model: Behavioral");
         
-        $monitor("time = %0d",$time, " A = %b B = %b C = %b D = %b output_F = %b", t_input[3], t_input[2], t_input[1], t_input[0], t_F);
+        $monitor("time = %0d ns",$time, " A = %b B = %b C = %b D = %b output_F = %b", t_input[3], t_input[2], t_input[1], t_input[0], t_F);
         $dumpfile("RPanY.vcd");
         $dumpvars();
     end
